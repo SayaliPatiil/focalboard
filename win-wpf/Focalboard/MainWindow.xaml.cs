@@ -15,7 +15,12 @@ namespace Focalboard {
 		private int port {
 			get { return ((App)Application.Current).port; }
 		}
-
+		
+		public partial class MainWindow : Window {
+		private int port {
+			get { return ((App)Application.Current).port; }
+		}
+			
 		private string sessionToken {
 			get { return ((App)Application.Current).sessionToken; }
 		}
