@@ -10,9 +10,6 @@ import {History} from 'history'
 
 import {IUser} from './user'
 
-
-
-
 import {Block} from './blocks/block'
 import {Board as BoardType, BoardMember, createBoard} from './blocks/board'
 import {createBoardView} from './blocks/boardView'
