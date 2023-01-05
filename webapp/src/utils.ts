@@ -22,6 +22,13 @@ import {UserSettings} from './userSettings'
 
 declare let window: IAppWindow
 
+
+
+
+
+
+
+
 const imageURLForUser = typeof window === 'undefined' ? undefined : (window as any).Components?.imageURLForUser
 const IconClass = 'octo-icon'
 const OpenButtonClass = 'open-button'
