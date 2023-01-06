@@ -13,6 +13,10 @@ const config = merge.merge(commonConfig, {
         minimize: true,
         minimizer: [new TerserPlugin({extractComments: false})],
     },
+    
+    
+    
+    
 });
 
 module.exports = [
