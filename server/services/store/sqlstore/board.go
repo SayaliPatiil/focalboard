@@ -310,6 +310,8 @@ func (s *SQLStore) insertBoard(db sq.BaseRunner, board *model.Board, userID stri
 		//nolint:gosec
 		// we don't need cryptographically secure hash, so MD5 is fine
 		board.Properties["trackingTemplateId"] = fmt.Sprintf("%x", md5.Sum([]byte(board.Title)))
+		
+		board.Properties["trackingTemplateId"] = fmt.Sprintf("%x", md5.Sum([]byte(board.Title)))
 	}
 
 	propertiesBytes, err := s.MarshalJSONB(board.Properties)
