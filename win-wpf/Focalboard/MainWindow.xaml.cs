@@ -29,6 +29,10 @@ namespace Focalboard {
 
 			this.Loaded += MainWindow_Loaded;
 			this.Closing += MainWindow_Closing;
+			
+			
+			
+			
 
 			InitializeWebView();
 		}
